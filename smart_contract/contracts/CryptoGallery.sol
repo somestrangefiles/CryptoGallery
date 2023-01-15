@@ -4,7 +4,12 @@ pragma solidity ^0.8.17;
 
 contract CryptoGallery {
 
-    event Donation(address from, uint amount, uint256 timestamp);
+
+    event Donation(
+        address from,
+        uint amount,
+        uint256 timestamp
+    );
 
     struct DonationStruct {
         address from;
