@@ -3,7 +3,6 @@
 pragma solidity ^0.8.17;
 
 contract CryptoGallery {
-    uint256 donationsCount = 0;
 
     event Donation(address from, uint amount, uint256 timestamp);
 
@@ -16,7 +15,6 @@ contract CryptoGallery {
     DonationStruct[] donations;
 
     function addDonationToBlockchain(uint amount) public {
-        donationsCount += 1;
         donations.push(DonationStruct(msg.sender, amount, block.timestamp));
         emit Donation(msg.sender, amount, block.timestamp);
 
@@ -26,7 +24,5 @@ contract CryptoGallery {
         return donations;
     }
 
-    function getDonationsCount() public view returns (uint256) {
-        return donationsCount;
-    }
+
 }
