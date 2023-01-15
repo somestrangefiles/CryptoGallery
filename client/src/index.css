@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App{
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 50px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.title {
+  font-size: 40px;
+}
+
+.walletAddress {
+  float: right;
+  margin-top: 30px;
+}
+
+.connectWallet {
+  background-color: rgb(85, 85, 248);
+  color: white;
+  transition-duration: 0.4s;
+  height: 35px;
+  width: 150px;
+  border-radius: 10px;
+}
+
+.connectWallet:hover {
+  background-color: white;
+  color: black;
+}
+
+
+.fileField {
+  margin: 0 0 50px 0;
+  
+}
+
+
+.img-grid{
+  max-width: 80%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+
+.img-wrap{
+  overflow: hidden;
+  height: 0;
+  padding: 50% 0;
+  position: relative;
+}
+
+.img-wrap img{
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 150%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+
+.donation{
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: auto;
+  background: rgb(255,255,255);
+}
+
+.donation img{
+  display: block;
+  max-width: 300px;
+  max-height: 300px;
+  margin: 60px auto 50px auto;
+  box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
+  border: 3px solid white;
+}
+
+.donation form input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+
+.donate {
+  background-color: rgb(85, 85, 248);
+  color: white;
+  transition-duration: 0.4s;
+  height: 60px;
+  width: 170px;
+  border-radius: 10px;
+  margin: 30px auto;
+}
+
+
+.donate:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(10, 10, 204);
+}
+
+
+.showDonationsToConsole {
+  background-color: rgb(85, 85, 248);
+  color: white;
+  transition-duration: 0.4s;
+  height: 35px;
+  width: 200px;
+  border-radius: 10px;
+  margin: 20px;
+}
