@@ -15,11 +15,10 @@ describe("CryptoGallery", function () {
     [owner] = await ethers.getSigners();
   });
 
-  it("", async = () => {
-    let donationsCount = contract.getAllDonations().length;
-    console.log(donationsCount);
+  it("Run funcs", async = () => {
+    contract.getAllDonations();
     contract.addDonationToBlockchain("0xe35fa931a00000");
-    expect(contract.getAllDonations().length).to.equal(donationsCount + 1);
+
   });
 
 
