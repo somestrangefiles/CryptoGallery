@@ -9,3 +9,7 @@
 После этого необходимо создать тестовую сеть с помощью команды
 
 ### `npx hardhat run scripts/deploy.js --network goerli`
+
+Для запуска тестов воспользуйтесь командой
+
+### `npx hardhat test`
